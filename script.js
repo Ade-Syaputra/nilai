@@ -22,9 +22,9 @@ document.getElementById("searchButton").addEventListener("click", function () {
             if (match) {
                 resultDiv.innerHTML = `
                     <p>Nama: ${match.Nama}</p>
-                    <p>Nilai Ujian (NU): ${match["NU"]}</p>
-                    <p>Nilai Akhir sebelum improve (NA): ${match["NA"]}</p>
-                    <p>Nilai Rapor (NR): ${match["NR"]}</p>
+                    <p>Nilai Ujian : ${match["nu"]}</p>
+                    <p>Nilai Akhir sebelum improve : ${match["na"]}</p>
+                    <p>Nilai Rapor : ${match["nr"]}</p>
                 `;
             } else {
                 resultDiv.textContent = "Nama tidak ditemukan!";
